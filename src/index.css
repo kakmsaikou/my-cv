@@ -1,0 +1,235 @@
+body {
+  background: #eee;
+  margin: 20px 0;
+}
+
+article {
+  width: 21cm;
+  min-height: 29.7cm;
+  background: white;
+  margin: 0 auto;
+  overflow: auto;
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: auto 14cm;
+}
+
+article > .right {
+}
+
+article > .left {
+  grid-area: left;
+  background-color: rgb(84, 89, 104);
+  padding-top: 2.5em;
+}
+
+article > .left > * {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.left > .job-seeking-info {
+  color: #fff;
+  padding-bottom: 16px;
+}
+
+.left > .job-seeking-info img {
+  width: 135px;
+  height: 144px;
+  margin: 0 auto;
+  display: block;
+}
+
+.left > .job-seeking-info > h1 {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.left > .job-seeking-info > p {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.left h2 {
+  color: rgb(221, 221, 221);
+  font-weight: 600;
+  border-top: 1px solid rgb(152, 155, 164);
+  border-bottom: 1px solid rgb(152, 155, 164);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  padding-top:7px;
+  padding-bottom:7px;
+}
+
+.left .personal-info, .left .contact-detail , .skill{
+  padding-top: 24px;
+  padding-bottom: 11px;
+}
+
+.left .personal-info p, .left .contact-detail p, .left .skill p{
+  font-size: 13px;
+  color: white;
+  padding-bottom: 13px;
+}
+
+.left .skill strong {
+  color: rgb(227,83,104);
+  line-height: 18px;
+}
+
+article > .right {
+  grid-area: right;
+  padding: 2em;
+}
+
+.h-wrapper {
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+}
+
+.right > div h2{
+  color: white;
+  display: inline-block;
+  padding: 6px 16px 6px;
+  background-color: rgb(84,89,104);
+  position: relative;
+}
+
+.right > div h2::before{
+  content: '';
+  width: 10px;
+  height: 0;
+  border: 18px solid transparent;
+  border-bottom: 33px solid rgb(84,89,104);
+  position: absolute;
+  top: -18px;
+  left: 78px;
+}
+
+.h-wrapper > .red-bar1{
+  position: absolute;
+  width: 45px;
+  height: 6px;
+  background-color: rgb(227,83,104);
+  transform: rotate(61deg);
+  top: 9px;
+  left: 91px;
+}
+
+.h-wrapper > .red-bar2{
+  position: absolute;
+  width: 374px;
+  height: 6px;
+  background-color: rgb(227,83,104);
+  top: 27px;
+  left: 122px;
+}
+
+.right .content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.right .time {
+  padding-bottom: 8px;
+}
+
+.right > .education span{
+  float: right;
+}
+
+.campus-experience, .projects, .openSource {
+  padding-bottom: 16px;
+}
+
+.right header {
+  padding-top: 16px;
+}
+
+.campus-experience li > header p {
+  margin-top:6px ;
+}
+
+.campus-experience li > header span {
+  float: right;
+}
+
+.campus-experience li > ul{
+  list-style: disc;
+  padding-top: 8px;
+  padding-left: 23px;
+  font-size: 15px;
+  line-height: 23px;
+  color: rgb(85,85,85);
+}
+
+.projects header {
+  padding-top: 16px;
+}
+
+.projects ol h3 {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.projects ol header > span {
+  float: right;
+  color: #666;
+}
+
+.projects li > ul{
+  list-style: disc;
+  padding-top: 8px;
+  padding-left: 23px;
+  font-size: 15px;
+  line-height: 23px;
+  color: rgb(85,85,85);
+}
+
+.projects li > ul strong {
+  color: rgb(227,83,104);
+}
+
+.projects .huawei-music {
+  position: relative;
+}
+
+.projects .huawei-music img{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+}
+
+.openSource ol h3 {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.openSource header > span {
+  float: right;
+  color: #666;
+}
+
+.openSource li > p{
+  font-size: 15px;
+  color: rgb(85,85,85);
+  padding-top: 8px;
+}
+
+.openSource li > p > strong {
+  color: rgb(227,83,104);
+}
+
+.others ul {
+  list-style: disc;
+  padding-top: 8px;
+  padding-left: 23px;
+  font-size: 15px;
+  line-height: 23px;
+  color: rgb(85,85,85);
+}
+
